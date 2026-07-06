@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto — Zentra</title>
+  <meta name="description" content="Hablemos. Cuéntanos cómo te sientes y te sugerimos por dónde empezar. Reserva tu sesión de terapia holística — respondemos en un día hábil." />
+  <link rel="icon" href="/assets/logo-monogram.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="has-mobile-bar">
+  <a href="#main" style="position:absolute;left:-999px" onfocus="this.style.left='1rem';this.style.top='1rem';this.style.zIndex=99" onblur="this.style.left='-999px'">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Principal">
+    <a class="nav-brand" href="/index.html" aria-label="Zentra — inicio"><img src="/assets/logo-combination.png" alt="Zentra" width="220" height="88" /></a>
+    <div class="nav-links" id="nav-links">
+      <a href="/index.html">Inicio</a>
+      <a href="/about.html">Nosotros</a>
+      <a href="/services.html">Servicios</a>
+      <a href="/faq.html">Preguntas</a>
+      <a href="/contact.html" aria-current="page">Contacto</a>
+    </div>
+    <a class="cta cta--nav" href="#formulario">Reserva tu sesión</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menú</button>
+  </nav>
+
+  <main id="main">
+    <!-- Encabezado cálido — banda crema sin imagen -->
+    <header class="page-header" id="top">
+      <div data-reveal-group>
+        <p class="eyebrow" data-reveal>Contacto</p>
+        <h1 data-reveal>Hablemos. Te responde una persona.</h1>
+        <p class="hero-sub" data-reveal>Cuéntanos cómo te sientes y te sugerimos por dónde empezar. Respondemos cada mensaje en un día hábil.</p>
+      </div>
+    </header>
+
+    <!-- Formulario + canales -->
+    <section class="section" id="formulario">
+      <div class="grid-12 layout-split">
+        <div class="g-text" data-reveal-group>
+          <p class="eyebrow" data-reveal>Escríbenos</p>
+          <h2 data-reveal>Cuéntanos lo esencial.</h2>
+          <form class="inquiry-form" data-reveal novalidate>
+            <div class="field">
+              <label for="nombre">Nombre
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required
+                       minlength="2" title="Escribe tu nombre." />
+              </label>
+              <p class="field-error">Escribe tu nombre para saber cómo dirigirnos a ti.</p>
+            </div>
+            <div class="field">
+              <label for="correo">Correo electrónico
+                <input id="correo" name="correo" type="email" autocomplete="email" required
+                       title="Escribe un correo válido, por ejemplo nombre@correo.com" />
+              </label>
+              <p class="field-error">Introduce un correo válido, por ejemplo nombre@correo.com.</p>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono <span class="optional">(opcional)</span>
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" />
+              </label>
+            </div>
+            <div class="field">
+              <label for="mensaje">¿Qué te gustaría experimentar o preguntar?
+                <textarea id="mensaje" name="mensaje" rows="4" required minlength="10"
+                          title="Cuéntanos brevemente qué te gustaría."></textarea>
+              </label>
+              <p class="field-error">Cuéntanos brevemente qué te gustaría (al menos unas palabras).</p>
+            </div>
+            <button type="submit" class="cta">Enviar mensaje</button>
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
+            <p class="form-note">Al enviar aceptas que te contactemos sobre tu sesión. No compartimos tus datos.</p>
+          </form>
+        </div>
+
+        <div class="g-media" data-reveal-group>
+          <p class="eyebrow" data-reveal>Canales directos</p>
+          <h2 data-reveal>¿Prefieres hablar ya?</h2>
+          <ul class="channel-list section-body" data-reveal>
+            <li><strong>Teléfono</strong><a href="tel:+520000000000" class="to-confirm">[Teléfono — POR CONFIRMAR]</a></li>
+            <li><strong>WhatsApp</strong><span class="to-confirm">[Número de WhatsApp — POR CONFIRMAR]</span></li>
+            <li><strong>Correo</strong><a href="mailto:hola@zentra.health">hola@zentra.health</a> <span class="to-confirm">[POR CONFIRMAR]</span></li>
+            <li><strong>Instagram</strong><span class="to-confirm">[@usuario — POR CONFIRMAR]</span></li>
+          </ul>
+
+          <p class="eyebrow" style="margin-top:var(--space-lg)" data-reveal>Dónde estamos</p>
+          <h2 data-reveal>Visítanos</h2>
+          <ul class="channel-list section-body" data-reveal>
+            <li><strong>Dirección</strong><span class="to-confirm">[Calle y número, ciudad — POR CONFIRMAR]</span></li>
+            <li><strong>Horario</strong><span class="to-confirm">Lun–Vie y Sáb [horario — POR CONFIRMAR] · Dom cerrado</span></li>
+            <li><strong>Cómo llegar</strong><span class="to-confirm">[Notas de transporte y estacionamiento — POR CONFIRMAR]</span></li>
+          </ul>
+          <p class="form-note" data-reveal>El mapa de ubicación se incrustará aquí una vez confirmada la dirección.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-signoff">Bienestar holístico, con calma y presencia.</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/logo-wordmark.png" alt="Zentra" width="180" height="72" />
+        <p>Un estudio boutique de terapias holísticas: Access Bars®, sanación energética y bienestar consciente.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <h2>Explora</h2>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/about.html">Nosotros</a></li>
+          <li><a href="/services.html">Servicios</a></li>
+          <li><a href="/faq.html">Preguntas frecuentes</a></li>
+          <li><a href="/contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Visítanos</h2>
+        <ul>
+          <li class="to-confirm">[Dirección — POR CONFIRMAR]</li>
+          <li class="to-confirm">[Ciudad, Estado, C.P. — POR CONFIRMAR]</li>
+          <li><a href="tel:+520000000000" class="to-confirm">[Teléfono — POR CONFIRMAR]</a></li>
+          <li><a href="mailto:hola@zentra.health">hola@zentra.health</a> <span class="to-confirm">[POR CONFIRMAR]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Horario</h2>
+        <ul>
+          <li class="to-confirm">Lun–Vie [horario — POR CONFIRMAR]</li>
+          <li class="to-confirm">Sáb [horario — POR CONFIRMAR]</li>
+          <li>Dom — Cerrado</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-wordmark" aria-hidden="true">Zentra</p>
+    <div class="footer-legal">
+      <span>© 2026 Zentra. Todos los derechos reservados.</span>
+      <span>Terapias holísticas de bienestar · No son un tratamiento médico ni sustituyen la atención profesional de salud.</span>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar" aria-label="Contacto rápido">
+    <a class="mcb-btn" href="tel:+520000000000">Llamar</a>
+    <a class="mcb-btn mcb-btn--primary" href="#formulario">Reservar</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+  <script src="/script.js" defer></script>
+</body>
+</html>
